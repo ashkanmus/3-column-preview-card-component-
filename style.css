@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{box-sizing: border-box; margin: 0; padding: 0;}
+.attribution {position: fixed; bottom: 15px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+    --Lexend-Deca: 'Lexend Deca', sans-serif;
+    --Big-Shoulder: 'Big Shoulders Display', cursive;
+    
+}
+
+
+/* Large Display */
+
+body{ background-color: var(--Very-light-gray-background-headings-buttons);min-height: 100vh; display: flex; justify-content: center; align-items: center;}
+
+main{
+    display: flex;
+    margin: 2em;
+    width: 1050px;
+}
+
+.col-1{background-color: var(--Bright-orange);padding: 2.8em; border-radius: .5em 0 0 .5em;}
+.col-2{background-color: var(--Dark-cyan);padding: 2.8em;}
+.col-3{background-color: var(--Very-dark-cyan);padding: 2.8em; border-radius: 0 .5em .5em 0;}
+
+h2{
+    font-size: 28pt;
+    font-family: var(--Big-Shoulder);
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+p{
+    font-size: 13pt;
+    font-family: var(--Lexend-Deca);
+    color: var(--Transparent-white-paragraphs);
+    line-height: 2;
+    font-weight: 300;
+}
+
+img{
+    width: 70px;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+button{
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    mix-blend-mode: screen;
+    font-size: 11pt;
+    font-weight: 700;
+    padding: 1em;
+    border-radius: 5em;
+    width: 150px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button:hover{
+    background-color: transparent;
+    color: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+}
+
+
+/* Mobile Display */
+@media only screen and (max-width: 600px) {
+    main {flex-direction: column; width: 100%;}
+    .col-1{ border-radius: .5em .5em 0 0;}
+    .col-3{ border-radius: 0 0 .5em .5em;}
+}
