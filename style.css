@@ -23,6 +23,7 @@ main{
     display: flex;
     margin: 2em;
     width: 1050px;
+    z-index: 1;
 }
 
 .col-1{background-color: var(--Bright-orange);padding: 2.8em; border-radius: .5em 0 0 .5em;}
@@ -57,6 +58,7 @@ img{
 button{
     background-color: var(--Very-light-gray-background-headings-buttons);
     mix-blend-mode: screen;
+    border: none;
     font-size: 11pt;
     font-weight: 700;
     padding: 1em;
